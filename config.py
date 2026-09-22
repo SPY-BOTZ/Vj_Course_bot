@@ -4,10 +4,10 @@
 
 import os
 
-api_id = int(os.environ.get("API_ID", ""))
-api_hash = os.environ.get("API_HASH", "")
-bot_token = os.environ.get("BOT_TOKEN", "")
-auth_users = [int(x.strip()) for x in os.environ.get("AUTH_USERS", "").split(",") if x.strip().isdigit()]
+api_id = int(os.environ.get("API_ID", "23621595"))
+api_hash = os.environ.get("API_HASH", "de904be2b4cd4efe2ea728ded17ca77d")
+bot_token = os.environ.get("BOT_TOKEN", "8653062194:AAHFvoh5A9zO5OYk5ruroH1-EYe56dk1smg")
+auth_users = [int(x.strip()) for x in os.environ.get("AUTH_USERS", "1249672673").split(",") if x.strip().isdigit()]
 
 if not api_id: raise ValueError("Set API_ID env var!")
 if not api_hash: raise ValueError("Set API_HASH env var!")
